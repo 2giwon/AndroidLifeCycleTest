@@ -69,4 +69,6 @@ class SampleFragment : Fragment() {
         super.onDetach()
         Log.e("SampleEgiwon", "SampleFragment - onDetach")
     }
+
+
 }

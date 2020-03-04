@@ -1,10 +1,16 @@
 package com.sample.egiwon.androidlifecycletest
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+
+    fun onShowActivity(view: View) {
+        startActivity(Intent(this, RotationActivity::class.java))
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
